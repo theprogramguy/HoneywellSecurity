@@ -125,7 +125,7 @@ void DigitalDecoder::handlePayload(uint64_t payload)
     //
     // Check CRC
     //
-    const uint64_t polynomial = 0x18005;
+    const uint64_t polynomial = 0x18050;
     uint64_t sum = payload & (~SYNC_MASK);
     uint64_t current_divisor = polynomial << 31;
     
